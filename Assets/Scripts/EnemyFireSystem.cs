@@ -12,6 +12,7 @@ namespace Kaeru
         private void Awake()
         {
             InvokeRepeating("SpawnBullet", 0, interval);
+
         }
     }
 

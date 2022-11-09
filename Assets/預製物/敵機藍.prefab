@@ -23,14 +23,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4466405849604135260}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: -1.12, y: -0.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5483112039629254054}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &5483112039629254049
 GameObject:
   m_ObjectHideFlags: 0
@@ -44,7 +44,9 @@ GameObject:
   - component: {fileID: 5483112039629254055}
   - component: {fileID: 336830752}
   - component: {fileID: 336830751}
-  m_Layer: 0
+  - component: {fileID: 336830753}
+  - component: {fileID: 336830758}
+  m_Layer: 7
   m_Name: "\u6575\u6A5F\u85CD"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,3 +178,32 @@ CircleCollider2D:
   m_Offset: {x: -0.0369277, y: -0.09693658}
   serializedVersion: 2
   m_Radius: 0.68247366
+--- !u!114 &336830753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5483112039629254049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb44429ae2c952542b8c4cf73e09dc93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabBullet: {fileID: 5464043173802845692, guid: 59f87126842ea03428d8bc6e69510d8f, type: 3}
+  pointSpawn: {fileID: 626002891359601530}
+  interval: 3
+--- !u!114 &336830758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5483112039629254049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6709cb54a630d4a42b5fc93009a6110e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameTarget: "\u73A9\u5BB6\u653B\u64CA"
+  prefabExplosion: {fileID: 7555072208035688145, guid: 334945e087dd1484394efedfc730eb6b, type: 3}
