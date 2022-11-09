@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 1749841777}
   - component: {fileID: 1749841776}
   m_Layer: 0
-  m_Name: carnavalSky
+  m_Name: "\u80CC\u666F"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
